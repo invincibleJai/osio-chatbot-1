@@ -26,8 +26,9 @@ export class MessageFormComponent implements OnInit {
 
     this.chatService.getResponse(this.message.content)
       .subscribe(res => {
+        let timeStamp = parseInt(res.Timestamp, 10);
         this.messages.push(
-          new Message(res.response, 'assets/images/bot.png', res.Timestamp)
+          new Message(res.response, 'assets/images/openshiftLogoType.png', new Date())
         );
       });
 

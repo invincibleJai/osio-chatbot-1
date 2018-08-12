@@ -25,4 +25,6 @@ import { MessageListComponent, MessageFormComponent, MessageItemComponent } from
         ChatbotComponent
     ]
 })
-export class ChatbotModule { }
+export class ChatbotModule {
+    constructor() {}
+ }

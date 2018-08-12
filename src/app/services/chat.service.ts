@@ -10,7 +10,8 @@ export class ChatService {
 
   private baseURL = 'https://api.dialogflow.com/v1/query?v=20150910';
   private baseURL1 = 'http://10.215.99.112:8008/api/v1';
-  private baseUrl2 = 'http://bot-server-8-bot-server.dev.rdu2c.fabric8.io';
+  private baseUrl2 = 'http://localhost:8008';
+  // 'http://bot-server-8-bot-server.dev.rdu2c.fabric8.io';
   private token: string = environment.token;
 
   constructor(private http: Http) { }
@@ -38,7 +39,7 @@ export class ChatService {
 
   public getHeaders() {
     const headers = new Headers();
-    headers.append('Authorization', `Bearer ${this.token}`);
+    headers.append('Authorization', `${this.token}`);
     return headers;
   }
 }

@@ -1,7 +1,6 @@
 <li class="list-group-item message-box">
   <img [src]="message.avatar" class="avatar" />
-  <div class="message">
-    {{message.content}}
+  <div class="message" [innerHTML]="message.content">
   </div>
   <div class="timeform">
     <i class="fa fa-clock-o" aria-hidden="true"></i>

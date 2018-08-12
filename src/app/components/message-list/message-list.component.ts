@@ -17,6 +17,9 @@ export class MessageListComponent implements OnInit, AfterViewInit {
 
   constructor() { }
 
+  ngOnInit() {
+  }
+
   ngAfterViewInit() {
     this.chatItems.changes.subscribe(elements => {
       // console.log('messsage list changed: ' + this.messages.length);
@@ -30,9 +33,6 @@ export class MessageListComponent implements OnInit, AfterViewInit {
     } catch (err) {
       console.log('Could not find the "chatList" element.');
     }
-  }
-
-  ngOnInit() {
   }
 
 }
