@@ -1,4 +1,9 @@
 <div class="chatform">
+    <div class="chat-header-comp">
+        <span class="chat-header-text">ChatBot</span>
+        <i class="pficon-close" (click)="closeChatBot()">
+        </i>
+    </div>
     <app-message-list [messages]="messages"></app-message-list>
-    <app-message-form [message]="message" [messages]="messages"></app-message-form>
+    <app-message-form [message]="message" [messages]="messages" [imgAvatarUrl]="imgAvatarUrl"></app-message-form>
 </div>

@@ -1,1 +1,2 @@
-<app-chatbot></app-chatbot>
+<app-chatbot class="app-chatbot-pos" *ngIf="isChatbotOn" [imgAvatarUrl]=avatarUrl (isChatBotOn)="chatBotStatusHandler($event)">
+</app-chatbot>
